@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Website</title>
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
+    <link rel="stylesheet" href="style.css">
+<script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/2.0.0/typeahead.bundle.min.js></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#"><i class="fas fa-clinic-medical"></i> The Dr. Dutta's Clinic</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#lab-tests">Lab Tests</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#appointments">Appointments</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header id="home" class="bg-primary text-white text-center py-5">
+
+        <div class="container">
+
+            <img src=https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.d298a09dafb4d7aa4723d970c6e7669d%3Frik%3Dd9le0PfF1A23sA%26riu%3Dhttp%253a%252f%252fwww.pngall.com%252fwp-content%252fuploads%252f2016%252f06%252fDoctor-Symbol-Caduceus-Free-Download-PNG.png%26ehk%3DYzbGK5jNe%252fxKaZURQnoa0eTitd6vyHgbTWs991j3xGI%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&data=05%7C02%7CPratyushSankar.Bhattacharyya%40bosch.com%7C33e1ebeafbf44f51975e08dd8273f40d%7C0ae51e1907c84e4bbb6d648ee58410f4%7C0%7C0%7C638810156706117202%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=YKrgvpLZgBYbaRe2keKRcW0Wo7ATUFFcNrD65RnjmaA%3D&reserved=0 height="100" width="100"alt="Clinic Banner" class="img-fluid mb-4">
+
+            <h1>Welcome to Dr. Dutta's Clinic</h1>
+
+            <p class="display-4">Diagnostic and Nursing Home</p>
+
+            <p class="lead">Advanced healthcare with expert professionals</p>
+
+            <a href="#appointments" data-bs-toggle="modal" data-bs-target="#appointmentModal" class="btn btn-light btn-lg"><i class="fas fa-calendar-alt"></i> Book an Appointment</a>
+
+        </div>
+
+    </header>
+
+<section id="about" class="py-5">
+
+    <div class="container">
+
+        <div class="card-body text-center">
+
+            <div class="card p-3 text-center">
+
+                <div class="card shadow">
+
+                    <div class="card-body text-center">
+
+                        <h2 class="mt-2"><i class="fa-solid fa-rocket"></i> About US</h2>
+
+                        <p>Dr. Dutta's Clinic a best diagnostic center and nursing home in Chandannagar which offers advanced medical testing, expert consultations, and quality inpatient care. Equipped with modern technology, it ensures accurate diagnoses and efficient treatments. Skilled healthcare professionals provide round-the-clock patient support. Clean, comfortable facilities enhance the patient experience. Trusted for reliability, affordability, and compassionate care.</p>
+
+                    </div>  
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section id="appointments" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">My Appointments</h2>
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col">Appointment Date</th>
+
+                            <th scope="col">Doctor</th>
+
+                            <th scope="col">Specialty</th>
+
+                            <th scope="col">Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>2025-02-15</td>
+
+                            <td>Dr. Arnab Ganguly</td>
+
+                            <td>Cardiology</td>
+
+                            <td><span class="badge bg-success">Completed</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>2025-02-20</td>
+
+                            <td>Dr. Neha Banerjee</td>
+
+                            <td>Neurology</td>
+
+                            <td><span class="badge bg-warning">Upcoming</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>2025-03-10</td>
+
+                            <td>Dr. Amit Barua</td>
+
+                            <td>Dermatology</td>
+
+                            <td><span class="badge bg-info">Confirmed</span></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                  <form id="labTestForm">
+
+                        <div class="mb-3">
+
+                            <label for="patientName" class="form-label">Patient Name</label>
+
+                            <input type="text" class="form-control" id="patientName" name="patientName" required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="patientEmail" class="form-label" data-bs-toggle="tooltip" title="We'll never share your email.">Email</label>
+
+                            <input type="email" class="form-control typeahead" id="email" name="email" required placeholder="Start typing an email...">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="patientPhone" class="form-label">Phone Number</label>
+
+                            <input type="text" class="form-control" id="patientPhone" name="patientPhone" required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="doctorSelect" class="form-label" data-bs-toggle="tooltip" title="Choose your preferred specialist.">Select Doctor</label>
+
+                            <select class="form-select" id="doctorSelect" name="doctor" required>
+
+                                <option value="Dr. Rajesh Sharma">Dr. Arnab Ganguly(Cardiologist)</option>
+
+                                <option value="Dr. Neha Agarwal">Dr. Neha Banerjee (Neurologist)</option>
+
+                                <option value="Dr. Amit Verma">Dr. Amit Barua (Dermatologist)</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
+
+                            <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <section id="services" class="bg-light py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">Our Services</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+
+                    <div class="card shadow">
+
+                        <div class="card-body text-center">
+
+                            <i class="fas fa-user-md fa-3x text-primary"></i>
+
+                            <h5 class="card-title mt-3">General Consultation</h5>
+
+                            <p class="card-text">Expert diagnosis and medical advice.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="card shadow">
+
+                        <div class="card-body text-center">
+
+                            <i class="fas fa-heartbeat fa-3x text-danger"></i>
+
+                            <h5 class="card-title mt-3">Cardiology</h5>
+
+                            <p class="card-text">Comprehensive heart care services.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="card shadow">
+
+                        <div class="card-body text-center">
+
+                            <i class="fas fa-child fa-3x text-warning"></i>
+
+                            <h5 class="card-title mt-3">Pediatrics</h5>
+
+                            <p class="card-text">Specialized care for children.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="card shadow">
+
+                        <div class="card-body text-center">
+
+                            <i class="fas fa-vials fa-3x text-success"></i>
+
+                            <h5 class="card-title mt-3">Lab Tests</h5>
+
+                            <p class="card-text">Free blood sample collection.</p>
+
+                        </div>
+            </div>
+        </div>
+    </section>
+    <section id="doctors" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Doctors</h2>
+
+    <div id="doctorsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card p-3 text-center shadow mx-auto" style="max-width: 300px;">
+            <i class="fas fa-user-md fa-3x text-primary"></i>
+            <h4 class="mt-2">Dr. Arnab Ganguly</h4>
+            <p>Cardiologist</p>
+            <p>Fees: 1000/-</p>
+            <a href="#" class="btn btn-success">Book Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card p-3 text-center shadow mx-auto" style="max-width: 300px;">
+
+            <i class="fas fa-user-md fa-3x text-primary"></i>
+
+            <h4 class="mt-2">Dr. Neha Banerjee</h4>
+
+            <p>Neurologist</p>
+
+            <p>Fees: 600/-</p>
+
+            <a href="#" class="btn btn-success">Book Now</a>
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="card p-3 text-center shadow mx-auto" style="max-width: 300px;">
+
+            <i class="fas fa-user-md fa-3x text-primary"></i>
+
+            <h4 class="mt-2">Dr. Amit Barua</h4>
+
+            <p>Dermatologist</p>
+
+            <p>Fees: 500/-</p>
+
+            <a href="#" class="btn btn-success">Book Now</a>
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="card p-3 text-center shadow mx-auto" style="max-width: 300px;">
+
+            <i class="fas fa-user-md fa-3x text-primary"></i>
+
+            <h4 class="mt-2">Dr. Sambit Bal</h4>
+
+            <p>General Physician</p>
+
+            <p>Fees: 500/-</p>
+
+            <a href="#" class="btn btn-success">Book Now</a>
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="card p-3 text-center shadow mx-auto" style="max-width: 300px;">
+
+            <i class="fas fa-user-md fa-3x text-primary"></i>
+
+            <h4 class="mt-2">Dr. A.R. Alam</h4>
+
+            <p>General Surgeon</p>
+
+            <p>Fees: 500/-</p>
+
+            <a href="#" class="btn btn-success">Book Now</a>
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="card p-3 text-center shadow mx-auto" style="max-width: 300px;">
+
+            <i class="fas fa-user-md fa-3x text-primary"></i>
+
+            <h4 class="mt-2">Dr. Pitha Pal</h4>
+
+            <p>Dentist</p>
+
+            <p>Fees: 400/-</p>
+
+            <a href="#" class="btn btn-success">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#doctorsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#doctorsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+    </section>
+    <section id="lab-tests" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Lab Tests</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-vials fa-3x text-success"></i>
+                            <h5 class="card-title mt-3">Blood Test</h5>
+                            <p class="card-text">Complete blood analysis with quick results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-x-ray fa-3x text-info"></i>
+                            <h5 class="card-title mt-3">X-Ray</h5>
+                            <p class="card-text">Advanced imaging services for precise diagnosis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-microscope fa-3x text-secondary"></i>
+                            <h5 class="card-title mt-3">Urine Analysis</h5>
+                            <p class="card-text">Detailed lab tests for accurate results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="lab-booking" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Book a Lab Test</h2>
+        <div id="labTestAlert" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+            <strong>Success!</strong> Your lab test request has been submitted.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div id="labTestAlert" class="alert alert-success alert-dismissible fade d-none" role="alert">
+  <strong>Success!</strong> Your lab test request has been submitted.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+        <form id="labTestForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="labName" class="form-label">Patient Name</label>
+                    <input type="text" class="form-control" id="labName" name="labName" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="labEmail" class="form-label" data-bs-toggle="tooltip" title="We'll never share your email.">Email</label>
+                    <input type="email" class="form-control typeahead" id="email" name="email" required placeholder="Start typing an email...">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="labPhone" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="labPhone" name="labPhone" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="testSelect" class="form-label">Select Lab Test</label>
+                    <select class="form-select" id="testSelect" name="labTest" required>
+                        <option value="">-- Choose a Test --</option>
+                        <option value="Blood Test">Blood Test</option>
+                        <option value="X-Ray">X-Ray</option>
+                        <option value="Urine Analysis">Urine Analysis</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="labDate" class="form-label">Preferred Date</label>
+                    <input type="date" class="form-control" id="labDate" name="labDate" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Lab Test</button>
+        </form>
+    </div>
+    <div class="container mt-3">
+        <h3>See</h3>
+       
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Why Choose Us?" data-bs-content="We offer advanced diagnostics, expert doctors, and compassionate care">
+          Why Us?
+        </button>
+      </div>
+     
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+          })
+        });
+      </script>
+
+    <section id="contact" class="py-5 bg-light text-center">
+
+        <div class="container">
+
+            <h2>Contact Us</h2>
+
+            <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City</p>
+
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+
+            <p><i class="fas fa-envelope"></i> info@clinic.com</p>
+
+        </div>
+
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+
+        <p>&copy; 2025 Our Clinic. All rights reserved.</p>
+
+    </footer>
+
+    <script src=https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fbootstrap%405.3.2%2Fdist%2Fjs%2Fbootstrap.bundle.min.js&data=05%7C02%7CPratyushSankar.Bhattacharyya%40bosch.com%7C33e1ebeafbf44f51975e08dd8273f40d%7C0ae51e1907c84e4bbb6d648ee58410f4%7C0%7C0%7C638810156706132396%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=f2OVsKcZCEB5KCqLgGhRxBJ46gYyIZqbpPTGNcs5rv8%3D&reserved=0></script>
+
+    <script src="scripts.js"></script>
+
+               <script>
+
+  document.getElementById("labTestForm").addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+ 
+
+    const alert = document.getElementById("labTestAlert");
+
+    alert.classList.remove("d-none", "fade");
+
+    alert.classList.add("show");
+
+ 
+
+    this.reset();
+
+  });
+
+</script>
+
+<script>
+
+  document.getElementById("labTestForm").addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+   
+
+    const modal = new bootstrap.Modal(document.getElementById('appointmentModal'));
+
+    modal.hide();
+
+ 
+
+    alert("Your appointment has been booked successfully!");
+
+ 
+
+    this.reset();
+
+  });
+
+</script>
+
+ 
+
+<script>
+
+ 
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+
+    new bootstrap.Tooltip(tooltipTriggerEl)
+
+  })
+
+</script>
+
+ 
+
+<script>
+
+    $(document).ready(function() {
+
+        const emailDomains = ['gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com', 'icloud.com'];
+
+ 
+
+        function initEmailTypeahead(selector) {
+
+            $(selector).typeahead({
+
+                source: function(query, process) {
+
+ 
+
+                    var atIndex = query.indexOf('@');
+
+                    var localPart = atIndex !== -1 ? query.substring(0, atIndex) : query;
+
+ 
+
+                    var suggestions = emailDomains.map(function(domain) {
+
+                        return localPart + '@' + domain;
+
+                    });
+
+ 
+
+                    process(suggestions);
+
+                },
+
+                autoSelect: true
+
+            });
+
+        }
+
+ 
+
+        initEmailTypeahead('#patientEmail');
+
+        initEmailTypeahead('#labEmail');
+
+    });
+
+</script>
+
+ 
+
+</body>
+
+</html>
