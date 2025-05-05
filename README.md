@@ -1,1 +1,3 @@
-# Dr-Dutta-s-Clinic-Website
+The website is for the clinic situated in my city. The clinic is a diagnostic centre also a Nursing Home. I have submitted this project in my class successfully. This website built with HTML, Bootstrap, and JavaScript, offering appointment booking and medical service details. It includes sections for Home, About Us, Services, Doctors, Lab Tests, and Contact with a responsive design. Users can view available doctors, book appointments via a modal form, and check lab test options. The project utilizes Bootstrap for styling, FontAwesome for icons, and a JavaScript file for interactions. Future improvements could include backend integration, user authentication, and email notifications.
+
+LinkedIn Post link: https://www.linkedin.com/posts/sahelidas11_the-website-is-for-the-clinic-situated-in-activity-7322520625338601472-xj_q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADENVkUBZ9bX-lliZkePREdIaCBS5m6Uf5o
